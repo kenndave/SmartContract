@@ -1,0 +1,13 @@
+{
+    "canisters": {
+        "LockerSystem": {
+            "type": "custom",
+            "main": "src/index.ts",
+            "candid": "src/index.did",
+            "build": "npx azle LockerSystem",
+            "wasm": ".azle/LockerSystem/LockerSystem.wasm",
+            "gzip": true
+        }
+    }
+}
+

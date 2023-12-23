@@ -1,23 +1,4 @@
-// Rencana: Decentralized Locker System
-/* List of methods:
-getItem
-trade
-setItem (admin mungkin)
-deleteItem (tambahan)
-checkInventory
-HistoryTransaction(user, trades)
-
-
-Item(Id, name, quantity)
-ListofItems(id, name)
-User(id, name, inventory, history)
-dll
-List of pembelajaran:
-query -> temporary aja, call function basically ambil" data
-update -> buat ngubah data, sifatnya permanen kalo ada fungsi set
-          di query gk akan ke update (temporer). Disini bakal ke update permanen
-
-*/
+// Smart Contract: Decentralized Locker System
 import {
     query,
     update,
@@ -26,22 +7,17 @@ import {
     StableBTreeMap,
     Principal,
     nat64,
-    nat8,
     Canister,
     Err,
     Ok,
     Result,
     Vec,
-    Void,
     bool,
-    empty,
     ic,
     Opt,
     None,
     Some
   } from "azle";
-import { v4 as uuidv4 } from "uuid";
-
 
 const Renter = Record({
   id: Principal,
@@ -268,5 +244,4 @@ function generateRentId(userId: Principal): Principal {
   return Principal.fromUint8Array(Uint8Array.from(combinedBytes));
 }
 
-// function 
 

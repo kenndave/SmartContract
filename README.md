@@ -1,7 +1,8 @@
 # Locker System
 
 ## System Overview
-This project implements a simple locker rent system on the Azle platform, allowing users to be able to rent lockers in a decentralized locker system.
+This project implements a simple locker rent system on the Azle platform, allowing users to create, contribute to, and manage crowdfunding projects. The system is built using the Azle library, providing a secure and decentralized environment for crowdfunding operations.
+
 ## Prerequisites
 - Node
 - Typescript
